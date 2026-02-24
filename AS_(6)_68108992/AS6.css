@@ -1,0 +1,203 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    z-index: 10;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .search-box input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  /* HERO */
+  .hero {
+    background: url('gallery/japan-background.jpg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .hero h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin: 0;
+    position: relative;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  
+  .hero-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  .hero-btn:hover {
+    background: white;
+    color: red;
+  }
+  /* SECTION TITLE */
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin: 40px 0;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: red;
+    display: block;
+    margin: 10px auto 0;
+  }
+  
+  /* ABOUT */
+  .about {
+    text-align: center;
+    padding: 20px 40px;
+  }
+  
+  /* GALLERY */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(80%);
+  }
+  
+  /* CARDS */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .card {
+    background: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* FOOTER */
+  footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social {
+    margin-top: 10px;
+  }
+  
+  .social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .social a:hover {
+    color: red;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width:768px){
+    .gallery {
+      grid-template-columns: repeat(2,1fr);
+    }
+  
+    .cards {
+      grid-template-columns: repeat(2,1fr);
+    }
+  
+    .hero h1 {
+      font-size: 40px;
+    }
+    
+    .menu {
+        display: none;
+      }
+  }
