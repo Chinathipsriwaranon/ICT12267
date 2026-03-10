@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AS7 68108992 Chinathip Sriwaranon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="AS7.css">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">Chinathip Sriwaranon</a>
+
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link active" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+</ul>
+
+</div>
+</nav>
+
+<!-- Video Banner -->
+<section class="banner">
+
+<video autoplay muted loop id="myVideo">
+<source src="203923-922675870_medium.mp4" type="video/mp4">
+</video>
+
+<div class="banner-text">
+<p>Chinathip Sriwaranon</p>
+</div>
+
+</section>
+
+<!-- Video Controls -->
+<div class="text-center mt-3">
+
+<button class="btn btn-warning"
+onclick="document.getElementById('myVideo').play()">
+Play
+</button>
+
+<button class="btn btn-danger"
+onclick="document.getElementById('myVideo').pause()">
+Pause
+</button>
+
+</div>
+
+<!-- Form -->
+<div class="container mt-5 mb-5">
+
+<div class="card p-4 shadow">
+
+<h2 class="text-center mb-4">แบบฟอร์มลงทะเบียน</h2>
+
+<form>
+
+<div class="mb-3">
+<label class="form-label">ชื่อ-นามสกุล</label>
+<input type="text" class="form-control" placeholder="กรุณากรอกชื่อ-นามสกุล">
+</div>
+
+<div class="mb-3">
+<label class="form-label">อีเมล</label>
+<input type="email" class="form-control" placeholder="example@domain.com">
+</div>
+
+<div class="mb-3">
+<label class="form-label">รหัสผ่าน</label>
+<input type="password" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">เพศ</label><br>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="gender">
+<label class="form-check-label">ชาย</label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="gender">
+<label class="form-check-label">หญิง</label>
+</div>
+
+</div>
+
+<div class="mb-3">
+<label class="form-label">ตำแหน่ง</label>
+
+<select class="form-select">
+
+<option selected>Web Development</option>
+<option>Mobile App</option>
+<option>Graphic Design</option>
+<option>Data Analyst</option>
+
+</select>
+
+</div>
+
+<div class="text-center">
+
+<button type="submit" class="btn btn-primary me-2">
+ลงทะเบียน
+</button>
+
+<button type="reset" class="btn btn-danger">
+ล้างข้อมูล
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>
