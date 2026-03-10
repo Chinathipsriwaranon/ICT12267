@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    font-family:Arial;
+    }
+    
+    /* Video Background */
+    
+    #bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+    }
+    
+    /* Form */
+    
+    .form-wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    max-width:420px;
+    }
+    
+    /* Card Style */
+    
+    .form-card{
+    background:rgba(255,255,255,0.9);
+    border-radius:20px;
+    backdrop-filter:blur(5px);
+    }
+    
+    /* Video Buttons */
+    
+    .video-controls{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    }
+    
+    /* Button spacing */
+    
+    .video-controls button{
+    margin:0 10px;
+    }
